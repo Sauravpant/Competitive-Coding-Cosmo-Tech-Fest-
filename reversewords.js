@@ -1,7 +1,7 @@
 // Problem Statement : Given a string s reverse the order of words in s.
 
 const reverseWords= (s) => {
-  const words=s.split(' ');
+  const words = s.trim().split(/\s+/); 
   const reversedWords=words.reverse();
   return reversedWords.join(' ');
 }
